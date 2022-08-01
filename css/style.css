@@ -1,0 +1,68 @@
+/* Animation */
+
+.galaxy-img {
+    width: 100%;
+    position: relative;
+}
+.rocket-img {
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 80px;
+    z-index: 3;
+    animation: rocket-img 12s infinite ease 2s alternate;
+    position: absolute
+  }
+  .astronaut-img {
+    width: 400px;
+    margin-right: 400px;
+    margin-top: 150px;
+    transform: translate(200px 500px);
+    z-index: 2;
+    animation: astronaut-img 10s infinite ease-in 2s;
+    position: absolute
+  }
+  .astronaut-img2 {
+    width: 80px;
+    margin-left: 250px;
+    margin-top: 150px;
+    animation: astronaut-img2 10s infinite ease-in 2s;
+    position: absolute
+  }
+  .orbital-img {
+    width: 400px;
+    transform: translate(500px,200px) rotate(290deg);
+    z-index: 0;
+    animation: orbital-img 10s infinite linear 2s;
+    position: absolute
+  }
+  .black-hole {
+    width: 200px;
+    margin-top: 150px;
+    margin-right: 500px;
+    transform: translate(500px,200px) rotate(200deg);
+    animation: black-hole 20s infinite linear 3s;
+    position: absolute
+  }
+
+/* keyframe animation */
+@keyframes rocket-img {
+    0% {left: 0;}
+    100% {left: 50px;}
+}
+@keyframes astronaut-img {
+    0% {right: 0;}
+    100% {right: 200px;}
+}
+@keyframes astronaut-img2 {
+    0% {left: 100px;}
+    100% {left: 400px;}
+}
+@keyframes orbital-img {
+    0% {left: 100px;}
+    100% {left: 115px;}
+}
+@keyframes black-hole {
+    0% {right: 150px;}
+    100% {right: 180px;}
+}
+
